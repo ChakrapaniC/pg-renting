@@ -209,6 +209,7 @@ footer{
 
 /* Media Queries for Responsive Design */
 
+
 @media screen and (max-width: 1200px) {
     /* .navbar {
         flex-direction: 
@@ -248,18 +249,39 @@ footer{
         width: 200px !important;
     }
 }
+@media screen and (min-width: 800px) and (max-width: 1100px){
+    .more-info ul li{
+        padding: 0px 15px;
+    }
+    .perks_div{
+        gap: 15px !important;
+    }
+    .img-1,.img-2,.img-3,.img-4{
+        width: 190px !important;
+        height: 180px !important;
+    }
 
+}
 @media screen and (max-width: 768px) {
     .navbar{
         flex-direction: column;
         height: auto;
         
     }
+    .amenities{
+        flex-direction: column;
+    }
     .left-side {
         width: 100%;
     }
+    .right-side{
+      width: 100% !important;
+    }
 
     .prefrences {
+        display: flex;
+      justify-content: center;
+      align-items: center;
         flex-direction: column;
         gap: 20px;
     }
@@ -341,12 +363,12 @@ footer{
         justify-content: center;
         align-items: center;
     } */
-    .prefrences{
-        margin: 0 auto;
-    }
+    .right-side{
+        width: 100% !important;
+      }
     .img-container{
         gap: 25px !important;
-        margin: 0 30px;
+        margin: 0 25px;
     }
     .cards{
         gap: 55px;
@@ -371,4 +393,4 @@ footer{
         height: 10px;
         color: black;
     } */
-}
+} 

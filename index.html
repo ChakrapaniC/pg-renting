@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <div class="container">
-    <nav class="navbar">
+  <body>
+    <div class="container">
+      <nav class="navbar">
       <p1 style="font-size: x-large; letter-spacing: 5px; font-weight: bold">Housify</p1>
 
       <div class="info">
@@ -41,11 +41,102 @@
       </div>
     </nav>
 
-    <section style="position: relative">
-      <div class="image" style="width: 100%; height: 200px">
-        <img src="svv.jpg" style="width: 100%; height: 100%; object-fit: cover" />
+      <nav class="navbar-new">
+        
+        <p1 style="font-size: x-large; letter-spacing: 5px; font-weight: bold"
+          >Housify</p1
+        >
+
+        <div class="info">
+          <p1>About Us</p1>
+          <p1>Contact Us</p1>
+          <p1>Rooms</p1>
+          <p1>Top Living</p1>
+        </div>
+        <div class="btn">
+          <button
+            style="
+              padding: 8px 15px;
+              border: none;
+              font-size: large;
+              color: white;
+              border-radius: 5px;
+              background-color: rgb(236, 77, 77);
+            "
+          >
+            Login
+          </button>
+          <button
+            style="
+              padding: 8px 15px;
+              border: none;
+              font-size: large;
+              color: white;
+              border-radius: 5px;
+              background-color: rgb(10, 169, 63);
+            "
+          >
+            Register
+          </button>
+        </div>
+
+        <div class="more-info">
+          <ul>
+            <li>Buy</li>
+            <li>Rent</li>
+            <li>New Launch</li>
+            <li>Pg/coliving</li>
+            <li>Commercial</li>
+            <li>Plot/Land</li>
+            <li>Project</li>
+          </ul>
+          <div
+            class="search"
+            style="display: flex; align-items: center; gap: 40px"
+          >
+            <div
+              class="dropdown"
+              style="
+                display: flex;
+                font-size: 20px;
+                font-weight: 500;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              All Residentail<span
+                ><img src="down-arrow.png" style="width: 30px; height: 30px"
+              /></span>
+            </div>
+            <div class="search-bar">
+              <input placeholder="Search 'Noida'" />
+              <button>Search</button>
+            </div>
+          </div>
+        </div>
+       
+      </nav>
+
+      <div class="social-media">
+        <div class="insta" style="width: 70px; height: 70px; display: flex; justify-content: center; align-items: center; border-radius: 50%; background-color: white; ">
+           <img src="top-living/insta-removebg-preview.png" style="width: 70%; height: 70%; object-fit: contain; border-radius: 50%;"/>
+        </div>
+        <div class="face" style="width: 70px; height: 70px; display: flex; justify-content: center; align-items: center; border-radius: 50%; background-color: white;">
+           <img src="top-living/facebook-removebg-preview.png" style="width: 70%; height: 70%; object-fit: contain; border-radius: 50%;"/>
+        </div>
+        <div class="twitter" style="width: 70px; height: 70px; display: flex; justify-content: center; align-items: center; border-radius: 50%; background-color: white;">
+          <img src="top-living/twitter-removebg-preview.png" style="width: 70%; height: 70%; object-fit: contain; border-radius: 50%;"/>
+        </div>
+
+
+
       </div>
-      <div class="more-info">
+
+      <section style="position: relative">
+        <!-- <div class="image" style="width: 100%; height: 200px">
+        <img src="svv.jpg" style="width: 100%; height: 100%; object-fit: cover" />
+      </div> -->
+        <!-- <div class="more-info">
         <ul>
           <li>Buy</li>
           <li>Rent</li>
@@ -65,22 +156,24 @@
             <button>Search</button>
           </div>
         </div>
-      </div>
-    </section>
+      </div> -->
+      </section>
 
-    <section class="amenities" style="margin-top: 70px">
-      <div class="left-side">
-        <div class="tag-line">
-          <p1>Find Your Best
-            <span style="color: rgb(230, 43, 43)">Space</span>
-          </p1>
-          <p1>For Living</p1>
-          <p1 style="color: rgb(75, 75, 241)">Here</p1>
-        </div>
-        <div class="perks">
-          <div class="perks_div" style="display: flex; gap: 40px">
-            <div class="wifi">
-              <div style="
+      <section class="amenities" style="background-color: rgb(229, 229, 177)">
+        <div class="left-side">
+          <div class="tag-line">
+            <p1
+              >Find Your Best
+              <span style="color: rgb(230, 43, 43)">Space</span>
+            </p1>
+            <p1>For Living</p1>
+            <p1 style="color: rgb(75, 75, 241)">Here</p1>
+          </div>
+          <div class="perks">
+            <div class="perks_div" style="display: flex; gap: 40px">
+              <div class="wifi">
+                <div
+                  style="
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -88,321 +181,686 @@
                     height: 70px;
                     background-color: white;
                     border-radius: 50%;
-                  ">
-                <img src="wifi.png" style="width: 40px; height: 40px" />
-              </div>
-              <h2>WiFi</h2>
-            </div>
-            <div class="laundry">
-              <div style="
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 70px;
-                    height: 70px;
-                    background-color: white;
-                    border-radius: 50%;
-                  ">
-                <img src="washing-machine.png" style="width: 40px; height: 40px" />
-              </div>
-              <h2>Laundry</h2>
-            </div>
-          </div>
-
-          <div class="perks_div" style="display: flex; gap: 40px">
-            <div class="food">
-              <div style="
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 70px;
-                    height: 70px;
-                    background-color: white;
-                    border-radius: 50%;
-                  ">
-                <img src="fast-food.png" style="width: 40px; height: 40px" />
-              </div>
-              <h2>Food</h2>
-            </div>
-            <div class="car">
-              <div style="
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 70px;
-                    height: 70px;
-                    background-color: white;
-                    border-radius: 50%;
-                  ">
-                <img src="parked-car.png" style="width: 40px; height: 40px" />
-              </div>
-              <h2>Parking</h2>
-            </div>
-          </div>
-          `
-        </div>
-        <div class="call">
-          <button class="call-btn">Request Call</button>
-        </div>
-      </div>
-
-      <div class="right-side" style="width: 50%">
-        <div class="prefrences" style="margin-bottom: 20px;">
-          <div class="img-container" style="display: flex; gap: 50px">
-            <div class="img-1" style="width: 250px; height: 200px; border-radius: 15px ;position: relative;">
-              <img src="girl.jpeg" style="
-                    border-radius: 15px;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                  " />
-              <p1 style="position: absolute; top: 80%; left: 15px; color: white; font-size: 20px; font-weight: 600;">For
-                Girls</p1>
-            </div>
-            <div class="img-2" style="width: 250px; height: 200px; border-radius: 15px; position: relative;">
-              <img src="boys.jpeg" style="
-                    border-radius: 15px;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                  " />
-              <p1 style="position: absolute; top: 80%; left: 15px; color: white; font-size: 20px; font-weight: 600;">For
-                Boys</p1>
-            </div>
-          </div>
-
-          <div class="img-container" style="display: flex; gap: 50px">
-            <div class="img-3" style="width: 250px; height: 200px; border-radius: 15px; position: relative;">
-              <img src="single room.png" style="
-                    border-radius: 15px;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                  " />
-              <p1 style="position: absolute; top: 80%; left: 15px; color: white; font-size: 20px; font-weight: 600;">
-                Single Room</p1>
-            </div>
-            <div class="img-4" style="width: 250px; height: 200px; border-radius: 15px; position: relative;">
-              <img src="for_professionals.png" style="
-                    border-radius: 15px;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-
-                  " />
-              <p1 style="position: absolute; top: 80%; left: 15px; color: white; font-size: 20px; font-weight: 600;">
-                Professionals</p1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="Properties" style="background-color: white; ">
-      <div class="latest-propety" style="padding:20px 40px ; margin-bottom: 40px;">
-        <div class="heading" style="display: flex; justify-content: space-between;">
-          <div>
-            <p style="font-size: 30px; font-weight: 600;">Recently Posted Properties :</p>
-            <p style="font-size: 20px; font-weight: 400; padding-top: 5px;">Hurry Up, Rooms Are Filling Up Quickly</p>
-          </div>
-          <div
-            style="background-color: rgb(228, 220, 220); font-size: large; font-weight: 600; padding: 10px; display: flex; justify-content: center; align-items: center;">
-            Sort By<span><img src="down-arrow.png" style="width: 30px; height: 30px;" /></span>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="cards">
-            <div class="card-1">
-              <img src="house 2.jpeg" style="border-radius: 15px;width: 100%; height: 100%; object-fit: cover;" />
-              <div class="price">
-                <p>&#8377; 9000</p>
-              </div>
-              <p style="font-weight: 600; font-size: 18px; padding: 5px 0px;">Shared By Two</p>
-              <p>in Sector 22 , <span style="font-weight: 600; padding-top: 5px;">Noida</span></p>
-            </div>
-            <div class="card-1">
-              <img src="house 1.avif" style="border-radius: 15px;width: 100%; height: 100%; object-fit: cover;" />
-              <div class="price">
-                <p>&#8377; 12000</p>
-              </div>
-              <p style="font-weight: 600; font-size: 18px; padding: 5px 0px;">Shared By Three</p>
-              <p>in malhad west , <span style="font-weight: 600; padding-top: 5px;">Mumbai</span></p>
-            </div>
-            <div class="card-1">
-              <img src="house 4.jpeg" style="border-radius: 15px;width: 100%; height: 100%; object-fit: cover;" />
-              <div class="price">
-                <p>&#8377; 15000</p>
-              </div>
-              <p style="font-weight: 600; font-size: 18px; padding: 5px 0px;">Single Room</p>
-              <p>in Sector 22 , <span style="font-weight: 600; padding-top: 5px;">Banglore</span></p>
-            </div>
-            <div class="card-1">
-              <img src="house.jpeg" style="border-radius: 15px;width: 100%; height: 100%; object-fit: cover;" />
-              <div class="price">
-                <p>&#8377; 8000</p>
-              </div>
-              <p style="font-weight: 600; font-size: 18px; padding: 5px 0px;">Shared By Two</p>
-              <p>in pragati medan 22 , <span style="font-weight: 600; padding-top: 5px;">New Delhi</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section class="query-section" style="background-color: rgb(77, 107, 228); ">
-        <div class="query-container">
-          <div class="query-fields">
-            <div class="query-heading">
-              <p style="font-size: 25px; font-weight: 600;">Let Us Find Your Perfect Property</p>
-              <p style="font-size: 20px; font-weight: 500; margin: 10px 0px;">Connect to a Homesaty Expert Now</p>
-            </div>
-            <div class="query-field">
-              <form>
-                <div class="input">
-                  <div>
-                    <input placeholder="name" type="text" required />
-                  </div>
-                  <div>
-                    <input placeholder="email" type="email" required />
-                  </div>
-                  <div>
-                    <input placeholder="Phone number" type="tel" maxlength="10" required />
-                  </div>
-                  <!----->
-  
-                  <div>
-                    <select>
-                      <option style="display: none;">Type of Space</option>
-                      <option>Single Room</option>
-                      <option>Triple Share</option>
-                      <option>twin Share</option>
-                    </select>
-                  </div>
-                  <div>
-                    <select>
-                      <option style="display: none;">Select City</option>
-                      <option>Noida</option>
-                      <option>Mumbai</option>
-                      <option>Banglore</option>
-                      <option>Gurugram</option>
-                      <option>Delhi</option>
-                      <option>Pune</option>
-                    </select>
-                  </div>
-                  <div>
-                    <button class="sub-btn">Submit</button>
-                  </div>
+                  "
+                >
+                  <img src="wifi.png" style="width: 40px; height: 40px" />
                 </div>
-              </form>
+                <h2>WiFi</h2>
+              </div>
+              <div class="laundry">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70px;
+                    height: 70px;
+                    background-color: white;
+                    border-radius: 50%;
+                  "
+                >
+                  <img
+                    src="washing-machine.png"
+                    style="width: 40px; height: 40px"
+                  />
+                </div>
+                <h2>Laundry</h2>
+              </div>
             </div>
-  
-  
+
+            <div class="perks_div" style="display: flex; gap: 40px">
+              <div class="food">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70px;
+                    height: 70px;
+                    background-color: white;
+                    border-radius: 50%;
+                  "
+                >
+                  <img src="fast-food.png" style="width: 40px; height: 40px" />
+                </div>
+                <h2>Food</h2>
+              </div>
+              <div class="car">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70px;
+                    height: 70px;
+                    background-color: white;
+                    border-radius: 50%;
+                  "
+                >
+                  <img src="parked-car.png" style="width: 40px; height: 40px" />
+                </div>
+                <h2>Parking</h2>
+              </div>
+            </div>
+            `
           </div>
-  
-          <div class="img-field">
-            <img src="img-fleld.jpeg" />
+          <div class="call">
+            <button class="call-btn">Request Call</button>
+          </div>
+        </div>
+
+        <div class="right-side" style="width: 50%">
+          <div class="prefrences" style="margin-bottom: 20px">
+            <div class="img-container" style="display: flex; gap: 50px">
+              <div
+                class="img-1"
+                style="
+                  width: 250px;
+                  height: 200px;
+                  border-radius: 15px;
+                  position: relative;
+                "
+              >
+                <img
+                  src="girl.jpeg"
+                  style="
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                />
+                <p1
+                  style="
+                    position: absolute;
+                    top: 80%;
+                    left: 15px;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 600;
+                  "
+                  >For Girls</p1
+                >
+              </div>
+              <div
+                class="img-2"
+                style="
+                  width: 250px;
+                  height: 200px;
+                  border-radius: 15px;
+                  position: relative;
+                "
+              >
+                <img
+                  src="boys.jpeg"
+                  style="
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                />
+                <p1
+                  style="
+                    position: absolute;
+                    top: 80%;
+                    left: 15px;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 600;
+                  "
+                  >For Boys</p1
+                >
+              </div>
+            </div>
+
+            <div class="img-container" style="display: flex; gap: 50px">
+              <div
+                class="img-3"
+                style="
+                  width: 250px;
+                  height: 200px;
+                  border-radius: 15px;
+                  position: relative;
+                "
+              >
+                <img
+                  src="single room.png"
+                  style="
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                />
+                <p1
+                  style="
+                    position: absolute;
+                    top: 80%;
+                    left: 15px;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 600;
+                  "
+                >
+                  Single Room</p1
+                >
+              </div>
+              <div
+                class="img-4"
+                style="
+                  width: 250px;
+                  height: 200px;
+                  border-radius: 15px;
+                  position: relative;
+                "
+              >
+                <img
+                  src="for_professionals.png"
+                  style="
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                />
+                <p1
+                  style="
+                    position: absolute;
+                    top: 80%;
+                    left: 15px;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 600;
+                  "
+                >
+                  Professionals</p1
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
-  
 
-      <div class="city">
-        <div class="heading" style="padding: 20px 40px ; margin-bottom: 20px;">
-          <p style="font-size: 30px; font-weight: 600;">Explore By City :</p>
-
-        </div>
-        <div class="cards">
-          <div class="mumbai">
-            <img src="mumbai.jpg"
-              style="width: 100%; height: 80%; border-top-left-radius:15px; border-top-right-radius: 15px;" />
-            <p
-              style="text-align: center; color: black; font-size: 25px; font-weight: 600; display: flex; align-items: center; justify-content: center;">
-              Mumbai</p>
-          </div>
-          <div class="mumbai">
-            <img src="bangalore-img.jpg"
-              style="width: 100%; height: 80%; border-top-left-radius:15px; border-top-right-radius: 15px;" />
-            <p
-              style="text-align: center; color: black; font-size: 25px; font-weight: 600; display: flex; align-items: center; justify-content: center;">
-              Banglore</p>
-          </div>
-          <div class="mumbai">
-            <img src="delhi-img.jpg"
-              style="width: 100%; height: 80%; border-top-left-radius:15px; border-top-right-radius: 15px;" />
-            <p
-              style="text-align: center; color: black; font-size: 25px; font-weight: 600; display: flex; align-items: center; justify-content: center;">
-              New Delhi</p>
-          </div>
-          <div class="mumbai">
-            <img src="mumbai.jpg"
-              style="width: 100%; height: 80%; border-top-left-radius:15px; border-top-right-radius: 15px;" />
-            <p
-              style="text-align: center; color: black; font-size: 25px; font-weight: 600; display: flex; align-items: center; justify-content: center;">
-              Mumbai</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-    <section class="renting">
-      <div class="property-img">
-        <img src="renting.webp" />
-      </div>
-      <br>
-      <div class="property-info">
-        <p style="color: rgb(194, 192, 189); font-weight: 600;">RENT A HOME</p>
-        <P style="color: black; font-size: 30px; font-weight: 600; text-align: center;">Considering Renting A Home ?</P>
-        <P style="font-size: 20px;">Rent a HOME in Similar Budget</P>
-        <button>Explore Renting</button>
-      </div>
-    </section>
-
-    <section class="advantage-section">
-      <div class="advantage-container">
-        <div class="advantage-heading">
-          <p class="p-1">Housify Advantages</p>
-          <p class="p-2">Housify is a plateform that provide you ease in hunting a perfect Living Spaces</p>
-        </div>
-        <div class="advantages ">
-          <div class="brokerage">
-            <div class="brokerage-img">
-              <img src="brokergage-free.jpg">
-            </div>
-            <div >
-              <p class="inner-p-1">Brokerage Free</p>
-              <hr  style="width: 50px; height: 2px; background-color: rgb(65, 65, 233); margin: 5px auto;"/>
-              <p class="inner-p-2">We have a zero brokerage policy</p>
-            </div>
-          </div>
-          <div class="exiting">
-            <div class="exiting-img">
-              <img src="giftd.jpg">
-            </div>
+      <section class="Properties" style="background-color: white">
+        <div
+          class="latest-propety"
+          style="padding: 20px 40px; margin-bottom: 40px"
+        >
+          <div
+            class="heading"
+            style="display: flex; justify-content: space-between"
+          >
             <div>
-              <p class="inner-p-1">Brokerage Free</p>
-              <hr  style="width: 50px; height: 2px; background-color: rgb(11, 11, 148); margin: 5px auto;"/>
-              <p class="inner-p-2">Fasten your seatbelts to get the ride of Housify breathtaking offers</p>
+              <p style="font-size: 30px; font-weight: 600">
+                Recently Posted Properties :
+              </p>
+              <p style="font-size: 20px; font-weight: 400; padding-top: 5px">
+                Hurry Up, Rooms Are Filling Up Quickly
+              </p>
+            </div>
+            <div
+              style="
+                background-color: rgb(228, 220, 220);
+                font-size: large;
+                font-weight: 600;
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Sort By<span
+                ><img src="down-arrow.png" style="width: 30px; height: 30px"
+              /></span>
             </div>
           </div>
-          <div class="amazing">
-            <div class="amazing-img">
-              <img src="community.jpg">
-            </div>
-            <div>
-              <p class="inner-p-1">Brokerage Free</p>
-              <hr  style="width: 50px; height: 2px; background-color: rgb(65, 65, 233); margin: 5px auto;"/>
-              <p class="inner-p-2">You will get an amazing community of like-minded people with the same spirit</p>
+          <div class="card-container">
+            <div class="cards">
+              <div class="card-1">
+                <img
+                  src="house 2.jpeg"
+                  style="
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                />
+                <div class="price">
+                  <p>&#8377; 9000</p>
+                </div>
+                <p style="font-weight: 600; font-size: 18px; padding: 5px 0px">
+                  Shared By Two
+                </p>
+                <p>
+                  in Sector 22 ,
+                  <span style="font-weight: 600; padding-top: 5px">Noida</span>
+                </p>
+              </div>
+              <div class="card-1">
+                <img
+                  src="house 1.avif"
+                  style="
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                />
+                <div class="price">
+                  <p>&#8377; 12000</p>
+                </div>
+                <p style="font-weight: 600; font-size: 18px; padding: 5px 0px">
+                  Shared By Three
+                </p>
+                <p>
+                  in malhad west ,
+                  <span style="font-weight: 600; padding-top: 5px">Mumbai</span>
+                </p>
+              </div>
+              <div class="card-1">
+                <img
+                  src="house 4.jpeg"
+                  style="
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                />
+                <div class="price">
+                  <p>&#8377; 15000</p>
+                </div>
+                <p style="font-weight: 600; font-size: 18px; padding: 5px 0px">
+                  Single Room
+                </p>
+                <p>
+                  in Sector 22 ,
+                  <span style="font-weight: 600; padding-top: 5px"
+                    >Banglore</span
+                  >
+                </p>
+              </div>
+              <div class="card-1">
+                <img
+                  src="house.jpeg"
+                  style="
+                    border-radius: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                />
+                <div class="price">
+                  <p>&#8377; 8000</p>
+                </div>
+                <p style="font-weight: 600; font-size: 18px; padding: 5px 0px">
+                  Shared By Two
+                </p>
+                <p>
+                  in pragati medan 22 ,
+                  <span style="font-weight: 600; padding-top: 5px"
+                    >New Delhi</span
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
+        <section
+          class="query-section"
+          style="background-color: rgb(77, 107, 228)"
+        >
+          <div class="query-container">
+            <div class="query-fields">
+              <div class="query-heading">
+                <p style="font-size: 25px; font-weight: 600">
+                  Let Us Find Your Perfect Property
+                </p>
+                <p style="font-size: 20px; font-weight: 500; margin: 10px 0px">
+                  Connect to a Homesaty Expert Now
+                </p>
+              </div>
+              <div class="query-field">
+                <form>
+                  <div class="input">
+                    <div>
+                      <input placeholder="name" type="text" required />
+                    </div>
+                    <div>
+                      <input placeholder="email" type="email" required />
+                    </div>
+                    <div>
+                      <input
+                        placeholder="Phone number"
+                        type="tel"
+                        maxlength="10"
+                        required
+                      />
+                    </div>
+                    <!----->
 
-    <footer>
-      <p>Copyrigth&copy;2024 All right Reserved</p>
-    </footer>
-  </div>
-</body>
+                    <div>
+                      <select>
+                        <option style="display: none">Type of Space</option>
+                        <option>Single Room</option>
+                        <option>Triple Share</option>
+                        <option>twin Share</option>
+                      </select>
+                    </div>
+                    <div>
+                      <select>
+                        <option style="display: none">Select City</option>
+                        <option>Noida</option>
+                        <option>Mumbai</option>
+                        <option>Banglore</option>
+                        <option>Gurugram</option>
+                        <option>Delhi</option>
+                        <option>Pune</option>
+                      </select>
+                    </div>
+                    <div>
+                      <button class="sub-btn">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
 
+            <div class="img-field">
+              <img src="img-fleld.jpeg" />
+            </div>
+          </div>
+        </section>
+
+        <div class="city">
+          <div class="heading" style="padding: 20px 40px; margin-bottom: 20px">
+            <p style="font-size: 30px; font-weight: 600">Explore By City :</p>
+          </div>
+          <div class="cards">
+            <div class="mumbai">
+              <img
+                src="mumbai.jpg"
+                style="
+                  width: 100%;
+                  height: 80%;
+                  border-top-left-radius: 15px;
+                  border-top-right-radius: 15px;
+                "
+              />
+              <p
+                style="
+                  text-align: center;
+                  color: black;
+                  font-size: 25px;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                Mumbai
+              </p>
+            </div>
+            <div class="mumbai">
+              <img
+                src="bangalore-img.jpg"
+                style="
+                  width: 100%;
+                  height: 80%;
+                  border-top-left-radius: 15px;
+                  border-top-right-radius: 15px;
+                "
+              />
+              <p
+                style="
+                  text-align: center;
+                  color: black;
+                  font-size: 25px;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                Banglore
+              </p>
+            </div>
+            <div class="mumbai">
+              <img
+                src="delhi-img.jpg"
+                style="
+                  width: 100%;
+                  height: 80%;
+                  border-top-left-radius: 15px;
+                  border-top-right-radius: 15px;
+                "
+              />
+              <p
+                style="
+                  text-align: center;
+                  color: black;
+                  font-size: 25px;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                New Delhi
+              </p>
+            </div>
+            <div class="mumbai">
+              <img
+                src="mumbai.jpg"
+                style="
+                  width: 100%;
+                  height: 80%;
+                  border-top-left-radius: 15px;
+                  border-top-right-radius: 15px;
+                "
+              />
+              <p
+                style="
+                  text-align: center;
+                  color: black;
+                  font-size: 25px;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                Mumbai
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="renting">
+        <div class="property-img">
+          <img src="renting.webp" />
+        </div>
+        <br />
+        <div class="property-info">
+          <p style="color: rgb(194, 192, 189); font-weight: 600">RENT A HOME</p>
+          <p
+            style="
+              color: black;
+              font-size: 30px;
+              font-weight: 600;
+              text-align: center;
+            "
+          >
+            Considering Renting A Home ?
+          </p>
+          <p style="font-size: 20px">Rent a HOME in Similar Budget</p>
+          <button>Explore Renting</button>
+        </div>
+      </section>
+
+      <section class="top-living">
+        <div class="top-living-container">
+          <div class="top-heading">
+            <p>Top Living in India</p>
+            <hr />
+          </div>
+
+          <div class="top-living-cards">
+            <div class="Gurugram">
+              <div class="Gurugram-img">
+                <img src="top-living/gurugram.jpg" alt="gurugram"/>
+              </div>
+              <div class="card-text">
+                <h4>Gurugram</h4>
+                <p>Millennium City</p>
+              </div>
+            </div>
+            <div class="Gurugram">
+              <div class="Gurugram-img">
+                <img src="top-living/banglore.jpg" alt="gurugram"/>
+              </div>
+              <div class="card-text">
+                <h4>Banglore</h4>
+                <p>India's Silicon Valley</p>
+              </div>
+            </div>
+            <div class="Gurugram">
+              <div class="Gurugram-img">
+                <img src="top-living/noida.jpg" alt="gurugram"/>
+              </div>
+              <div class="card-text">
+                <h4>Noida</h4>
+                <p>The Hitech City</p>
+              </div>
+            </div>
+            <div class="Gurugram">
+              <div class="Gurugram-img">
+                <img src="top-living/pune.jpg" alt="gurugram"/>
+              </div>
+              <div class="card-text">
+                <h4>Pune</h4>
+                <p>Queens of the Deccan</p>
+              </div>
+            </div>
+            <div class="Gurugram">
+              <div class="Gurugram-img">
+                <img src="top-living/hydrabad.jpg" alt="gurugram"/>
+              </div>
+              <div class="card-text">
+                <h4>Hyderabad</h4>
+                <p>A City of Nawabs</p>
+              </div>
+            </div>
+            <div class="Gurugram">
+              <div class="Gurugram-img">
+                <img src="top-living/mumbai.jpg" alt="gurugram"/>
+              </div>
+              <div class="card-text">
+                <h4>Mumbai</h4>
+                <p>A City of Dreams</p>
+              </div>
+            </div>
+            <div class="Gurugram">
+              <div class="Gurugram-img">
+                <img src="top-living/delhi.jpg" alt="gurugram"/>
+              </div>
+              <div class="card-text">
+                <h4>Delhi</h4>
+                <p>The National Capital</p>
+              </div>
+            </div>
+            <div class="Gurugram">
+              <div class="Gurugram-img">
+                <img src="top-living/gujrat.jpg" alt="gurugram"/>
+              </div>
+              <div class="card-text">
+                <h4>Ahmedabad</h4>
+                <p>The Hitech City</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantage-section">
+        <div class="advantage-container">
+          <div class="advantage-heading">
+            <p class="p-1">Housify Advantages</p>
+            <p class="p-2">
+              Housify is a plateform that provide you ease in hunting a perfect
+              Living Spaces
+            </p>
+          </div>
+          <div class="advantages">
+            <div class="brokerage">
+              <div class="brokerage-img">
+                <img src="brokergage-free.jpg" />
+              </div>
+              <div>
+                <p class="inner-p-1">Brokerage Free</p>
+                <hr
+                  style="
+                    width: 50px;
+                    height: 2px;
+                    background-color: rgb(65, 65, 233);
+                    margin: 5px auto;
+                  "
+                />
+                <p class="inner-p-2">We have a zero brokerage policy</p>
+              </div>
+            </div>
+            <div class="exiting">
+              <div class="exiting-img">
+                <img src="giftd.jpg" />
+              </div>
+              <div>
+                <p class="inner-p-1">Brokerage Free</p>
+                <hr
+                  style="
+                    width: 50px;
+                    height: 2px;
+                    background-color: rgb(11, 11, 148);
+                    margin: 5px auto;
+                  "
+                />
+                <p class="inner-p-2">
+                  Fasten your seatbelts to get the ride of Housify breathtaking
+                  offers
+                </p>
+              </div>
+            </div>
+            <div class="amazing">
+              <div class="amazing-img">
+                <img src="community.jpg" />
+              </div>
+              <div>
+                <p class="inner-p-1">Brokerage Free</p>
+                <hr
+                  style="
+                    width: 50px;
+                    height: 2px;
+                    background-color: rgb(65, 65, 233);
+                    margin: 5px auto;
+                  "
+                />
+                <p class="inner-p-2">
+                  You will get an amazing community of like-minded people with
+                  the same spirit
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Copyrigth&copy;2024 All right Reserved</p>
+      </footer>
+    </div>
+  </body>
 </html>

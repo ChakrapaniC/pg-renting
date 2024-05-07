@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
@@ -11,38 +12,43 @@
   <body>
     <div class="container">
       <nav class="navbar">
-      <p1 style="font-size: x-large; letter-spacing: 5px; font-weight: bold">Housify</p1>
+        <p1 style="font-size: x-large; letter-spacing: 5px; font-weight: bold"
+          >Housify</p1
+        >
 
-      <div class="info">
-        <p1>About Us</p1>
-        <p1>Contact Us</p1>
-      </div>
-      <div class="btn">
-        <button style="
+        <div class="info">
+          <p1>About Us</p1>
+          <p1>Contact Us</p1>
+        </div>
+        <div class="btn">
+          <button
+            style="
               padding: 8px 15px;
               border: none;
               font-size: large;
               color: white;
               border-radius: 5px;
               background-color: rgb(236, 77, 77);
-            ">
-          Login
-        </button>
-        <button style="
+            "
+          >
+            Login
+          </button>
+          <button
+            style="
               padding: 8px 15px;
               border: none;
               font-size: large;
               color: white;
               border-radius: 5px;
               background-color: rgb(10, 169, 63);
-            ">
-          Register
-        </button>
-      </div>
-    </nav>
+            "
+          >
+            Register
+          </button>
+        </div>
+      </nav>
 
       <nav class="navbar-new">
-        
         <p1 style="font-size: x-large; letter-spacing: 5px; font-weight: bold"
           >Housify</p1
         >
@@ -105,7 +111,9 @@
               "
             >
               All Residentail<span
-                ><img src="down-arrow.png" style="width: 30px; height: 30px"
+                ><img
+                  src="landing-page-img/down-arrow.png"
+                  style="width: 30px; height: 30px"
               /></span>
             </div>
             <div class="search-bar">
@@ -114,22 +122,75 @@
             </div>
           </div>
         </div>
-       
       </nav>
 
       <div class="social-media">
-        <div class="insta" style="width: 70px; height: 70px; display: flex; justify-content: center; align-items: center; border-radius: 50%; background-color: white; ">
-           <img src="top-living/insta-removebg-preview.png" style="width: 70%; height: 70%; object-fit: contain; border-radius: 50%;"/>
+        <div
+          class="insta"
+          style="
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: white;
+          "
+        >
+          <img
+            src="top-living/insta-removebg-preview.png"
+            style="
+              width: 70%;
+              height: 70%;
+              object-fit: contain;
+              border-radius: 50%;
+            "
+          />
         </div>
-        <div class="face" style="width: 70px; height: 70px; display: flex; justify-content: center; align-items: center; border-radius: 50%; background-color: white;">
-           <img src="top-living/facebook-removebg-preview.png" style="width: 70%; height: 70%; object-fit: contain; border-radius: 50%;"/>
+        <div
+          class="face"
+          style="
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: white;
+          "
+        >
+          <img
+            src="top-living/facebook-removebg-preview.png"
+            style="
+              width: 70%;
+              height: 70%;
+              object-fit: contain;
+              border-radius: 50%;
+            "
+          />
         </div>
-        <div class="twitter" style="width: 70px; height: 70px; display: flex; justify-content: center; align-items: center; border-radius: 50%; background-color: white;">
-          <img src="top-living/twitter-removebg-preview.png" style="width: 70%; height: 70%; object-fit: contain; border-radius: 50%;"/>
+        <div
+          class="twitter"
+          style="
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: white;
+          "
+        >
+          <img
+            src="top-living/twitter-removebg-preview.png"
+            style="
+              width: 70%;
+              height: 70%;
+              object-fit: contain;
+              border-radius: 50%;
+            "
+          />
         </div>
-
-
-
       </div>
 
       <section style="position: relative">
@@ -161,7 +222,7 @@
 
       <section class="amenities" style="background-color: rgb(229, 229, 177)">
         <div class="left-side">
-          <div class="tag-line">
+          <div class="tag-line" data-aos="fade-right" data-aos-duration="1000">
             <p1
               >Find Your Best
               <span style="color: rgb(230, 43, 43)">Space</span>
@@ -169,7 +230,7 @@
             <p1>For Living</p1>
             <p1 style="color: rgb(75, 75, 241)">Here</p1>
           </div>
-          <div class="perks">
+          <div class="perks" data-aos="fade-right" data-aos-duration="1000">
             <div class="perks_div" style="display: flex; gap: 40px">
               <div class="wifi">
                 <div
@@ -183,7 +244,10 @@
                     border-radius: 50%;
                   "
                 >
-                  <img src="wifi.png" style="width: 40px; height: 40px" />
+                  <img
+                    src="landing-page-img/wifi.png"
+                    style="width: 40px; height: 40px"
+                  />
                 </div>
                 <h2>WiFi</h2>
               </div>
@@ -200,7 +264,7 @@
                   "
                 >
                   <img
-                    src="washing-machine.png"
+                    src="landing-page-img/washing-machine.png"
                     style="width: 40px; height: 40px"
                   />
                 </div>
@@ -221,7 +285,10 @@
                     border-radius: 50%;
                   "
                 >
-                  <img src="fast-food.png" style="width: 40px; height: 40px" />
+                  <img
+                    src="landing-page-img/fast-food.png"
+                    style="width: 40px; height: 40px"
+                  />
                 </div>
                 <h2>Food</h2>
               </div>
@@ -237,7 +304,10 @@
                     border-radius: 50%;
                   "
                 >
-                  <img src="parked-car.png" style="width: 40px; height: 40px" />
+                  <img
+                    src="landing-page-img/parked-car.png"
+                    style="width: 40px; height: 40px"
+                  />
                 </div>
                 <h2>Parking</h2>
               </div>
@@ -251,7 +321,7 @@
 
         <div class="right-side" style="width: 50%">
           <div class="prefrences" style="margin-bottom: 20px">
-            <div class="img-container" style="display: flex; gap: 50px">
+            <div class="img-container" style="display: flex; gap: 50px" >
               <div
                 class="img-1"
                 style="
@@ -260,9 +330,11 @@
                   border-radius: 15px;
                   position: relative;
                 "
+                data-aos="fade-down-right"
+                data-aos-duration="1000"
               >
                 <img
-                  src="girl.jpeg"
+                  src="landing-page-img/girl.jpeg"
                   style="
                     border-radius: 15px;
                     width: 100%;
@@ -290,9 +362,11 @@
                   border-radius: 15px;
                   position: relative;
                 "
+                data-aos="fade-down-left"
+                data-aos-duration="1000"
               >
                 <img
-                  src="boys.jpeg"
+                  src="landing-page-img/boys.jpeg"
                   style="
                     border-radius: 15px;
                     width: 100%;
@@ -323,9 +397,11 @@
                   border-radius: 15px;
                   position: relative;
                 "
+                data-aos="fade-up-right"
+                data-aos-duration="1000"
               >
                 <img
-                  src="single room.png"
+                  src="landing-page-img/single room.png"
                   style="
                     border-radius: 15px;
                     width: 100%;
@@ -354,9 +430,11 @@
                   border-radius: 15px;
                   position: relative;
                 "
+                data-aos="fade-up-left"
+                data-aos-duration="1000"
               >
                 <img
-                  src="for_professionals.png"
+                  src="landing-page-img/for_professionals.png"
                   style="
                     border-radius: 15px;
                     width: 100%;
@@ -382,7 +460,7 @@
         </div>
       </section>
 
-      <section class="Properties" style="background-color: white">
+      <section class="Properties" style="background-color: white" data-aos="zoom-in" data-aos-duration="1500">
         <div
           class="latest-propety"
           style="padding: 20px 40px; margin-bottom: 40px"
@@ -412,7 +490,9 @@
               "
             >
               Sort By<span
-                ><img src="down-arrow.png" style="width: 30px; height: 30px"
+                ><img
+                  src="landing-page-img/down-arrow.png"
+                  style="width: 30px; height: 30px"
               /></span>
             </div>
           </div>
@@ -420,7 +500,7 @@
             <div class="cards">
               <div class="card-1">
                 <img
-                  src="house 2.jpeg"
+                  src="landing-page-img/house 2.jpeg"
                   style="
                     border-radius: 15px;
                     width: 100%;
@@ -462,7 +542,7 @@
               </div>
               <div class="card-1">
                 <img
-                  src="house 4.jpeg"
+                  src="landing-page-img/house 4.jpeg"
                   style="
                     border-radius: 15px;
                     width: 100%;
@@ -485,7 +565,7 @@
               </div>
               <div class="card-1">
                 <img
-                  src="house.jpeg"
+                  src="landing-page-img/house.jpeg"
                   style="
                     border-radius: 15px;
                     width: 100%;
@@ -571,7 +651,7 @@
             </div>
 
             <div class="img-field">
-              <img src="img-fleld.jpeg" />
+              <img src="landing-page-img/img-fleld.jpeg" />
             </div>
           </div>
         </section>
@@ -583,7 +663,7 @@
           <div class="cards">
             <div class="mumbai">
               <img
-                src="mumbai.jpg"
+                src="landing-page-img/mumbai.jpg"
                 style="
                   width: 100%;
                   height: 80%;
@@ -607,7 +687,7 @@
             </div>
             <div class="mumbai">
               <img
-                src="bangalore-img.jpg"
+                src="landing-page-img/bangalore-img.jpg"
                 style="
                   width: 100%;
                   height: 80%;
@@ -631,7 +711,7 @@
             </div>
             <div class="mumbai">
               <img
-                src="delhi-img.jpg"
+                src="landing-page-img/delhi-img.jpg"
                 style="
                   width: 100%;
                   height: 80%;
@@ -655,7 +735,7 @@
             </div>
             <div class="mumbai">
               <img
-                src="mumbai.jpg"
+                src="top-living/wtc-noida.jpg"
                 style="
                   width: 100%;
                   height: 80%;
@@ -674,7 +754,7 @@
                   justify-content: center;
                 "
               >
-                Mumbai
+                Noida
               </p>
             </div>
           </div>
@@ -683,7 +763,7 @@
 
       <section class="renting">
         <div class="property-img">
-          <img src="renting.webp" />
+          <img src="landing-page-img/renting.webp" />
         </div>
         <br />
         <div class="property-info">
@@ -703,7 +783,7 @@
         </div>
       </section>
 
-      <section class="top-living">
+      <section class="top-living" data-aos="fade-up"  data-aos-duration="2000">
         <div class="top-living-container">
           <div class="top-heading">
             <p>Top Living in India</p>
@@ -713,70 +793,70 @@
           <div class="top-living-cards">
             <div class="Gurugram">
               <div class="Gurugram-img">
-                <img src="top-living/gurugram.jpg" alt="gurugram"/>
+                <img src="top-living/gurugram.jpg" alt="gurugram" />
               </div>
               <div class="card-text">
                 <h4>Gurugram</h4>
                 <p>Millennium City</p>
               </div>
             </div>
-            <div class="Gurugram">
+            <div class="Bangalore">
               <div class="Gurugram-img">
-                <img src="top-living/banglore.jpg" alt="gurugram"/>
+                <img src="top-living/banglore.jpg" alt="gurugram" />
               </div>
               <div class="card-text">
                 <h4>Banglore</h4>
                 <p>India's Silicon Valley</p>
               </div>
             </div>
-            <div class="Gurugram">
+            <div class="Noida">
               <div class="Gurugram-img">
-                <img src="top-living/noida.jpg" alt="gurugram"/>
+                <img src="top-living/noida.jpg" alt="gurugram" />
               </div>
               <div class="card-text">
                 <h4>Noida</h4>
                 <p>The Hitech City</p>
               </div>
             </div>
-            <div class="Gurugram">
+            <div class="Pune">
               <div class="Gurugram-img">
-                <img src="top-living/pune.jpg" alt="gurugram"/>
+                <img src="top-living/pune.jpg" alt="gurugram" />
               </div>
               <div class="card-text">
                 <h4>Pune</h4>
                 <p>Queens of the Deccan</p>
               </div>
             </div>
-            <div class="Gurugram">
+            <div class="Hyderabad">
               <div class="Gurugram-img">
-                <img src="top-living/hydrabad.jpg" alt="gurugram"/>
+                <img src="top-living/hydrabad.jpg" alt="gurugram" />
               </div>
               <div class="card-text">
                 <h4>Hyderabad</h4>
                 <p>A City of Nawabs</p>
               </div>
             </div>
-            <div class="Gurugram">
+            <div class="Mumbai1">
               <div class="Gurugram-img">
-                <img src="top-living/mumbai.jpg" alt="gurugram"/>
+                <img src="top-living/mumbai.jpg" alt="gurugram" />
               </div>
               <div class="card-text">
                 <h4>Mumbai</h4>
                 <p>A City of Dreams</p>
               </div>
             </div>
-            <div class="Gurugram">
+            <div class="Delhi">
               <div class="Gurugram-img">
-                <img src="top-living/delhi.jpg" alt="gurugram"/>
+                <img src="top-living/delhi.jpg" alt="gurugram" />
               </div>
               <div class="card-text">
                 <h4>Delhi</h4>
                 <p>The National Capital</p>
               </div>
             </div>
-            <div class="Gurugram">
+            <div class="Ahmedabad">
               <div class="Gurugram-img">
-                <img src="top-living/gujrat.jpg" alt="gurugram"/>
+                <img src="top-living/gujrat.jpg" alt="gurugram" />
               </div>
               <div class="card-text">
                 <h4>Ahmedabad</h4>
@@ -787,7 +867,7 @@
         </div>
       </section>
 
-      <section class="advantage-section">
+      <section class="advantage-section" data-aos="fade-up" data-aos-duration="1000">
         <div class="advantage-container">
           <div class="advantage-heading">
             <p class="p-1">Housify Advantages</p>
@@ -799,7 +879,7 @@
           <div class="advantages">
             <div class="brokerage">
               <div class="brokerage-img">
-                <img src="brokergage-free.jpg" />
+                <img src="landing-page-img/brokergage-free.jpg" />
               </div>
               <div>
                 <p class="inner-p-1">Brokerage Free</p>
@@ -816,10 +896,10 @@
             </div>
             <div class="exiting">
               <div class="exiting-img">
-                <img src="giftd.jpg" />
+                <img src="landing-page-img/giftd.jpg" />
               </div>
               <div>
-                <p class="inner-p-1">Brokerage Free</p>
+                <p class="inner-p-1">Exciting Offers</p>
                 <hr
                   style="
                     width: 50px;
@@ -836,10 +916,10 @@
             </div>
             <div class="amazing">
               <div class="amazing-img">
-                <img src="community.jpg" />
+                <img src="landing-page-img/community.jpg" />
               </div>
               <div>
-                <p class="inner-p-1">Brokerage Free</p>
+                <p class="inner-p-1">Amazing Opportunity</p>
                 <hr
                   style="
                     width: 50px;
@@ -862,5 +942,11 @@
         <p>Copyrigth&copy;2024 All right Reserved</p>
       </footer>
     </div>
+
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

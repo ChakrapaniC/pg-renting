@@ -17,7 +17,7 @@
         >
 
         <div class="info">
-          <p1>About Us</p1>
+          <p1><a href="#top-living">About Us</a></p1>
           <p1>Contact Us</p1>
         </div>
         <div class="btn">
@@ -48,18 +48,23 @@
         </div>
       </nav>
 
-      <nav class="navbar-new">
-        <p1 style="font-size: x-large; letter-spacing: 5px; font-weight: bold"
-          >Housify</p1
-        >
+      <nav id="navbar1">
+        <div class="navbar-new">
+          <p1 style="font-size: 30px; letter-spacing: 5px; font-weight: bold"
+            >Housify</p1
+          >
 
-        <div class="info">
-          <p1>About Us</p1>
-          <p1>Contact Us</p1>
-          <p1>Rooms</p1>
-          <p1>Top Living</p1>
+          <div class="info">
+            <p1><a href="#top-living">About Us</a></p1>
+            <p1><a href="#">Contact Us</a></p1>
+            <p1><a href="#">Top Living</a></p1>
+          </div>
+
+          <div class="btn">
+            <button class="call-btn">Request Call</button>
+          </div>
         </div>
-        <div class="btn">
+        <!-- <div class="btn">
           <button
             style="
               padding: 8px 15px;
@@ -84,9 +89,9 @@
           >
             Register
           </button>
-        </div>
+        </div> -->
 
-        <div class="more-info">
+        <!-- <div class="more-info">
           <ul>
             <li>Buy</li>
             <li>Rent</li>
@@ -121,10 +126,28 @@
               <button>Search</button>
             </div>
           </div>
+        </div> -->
+        <div class="search-box">
+          <div class="inner-search">
+            <input type="text" placeholder="Search Your Location" readonly onclick="toggleMenu()"/>
+            <div class="search-icon">
+              <img src="icons8-magnifying-glass-30.png"/>
+            </div>
+            <div class="dropdown-menu">
+              <a href="bangalore/city.html">Bangalore</a>
+              <a href="delhi/delhi.html">Delhi</a>
+              <a href="noida/noida.html">Noida</a>
+              <a href="gurugram/gurugram.html">Gurugram</a>
+              <a href="hyderabad/hyderabad.htm">Hyderabad</a>
+              <a href="pune/pune.html">Pune</a>
+              <a href="mumbai/mumbai.html">Mumbai</a>
+              <a href="ahmedabad/ahmedabad.html">Ahmedabad</a>
+            </div>
+          </div>
         </div>
       </nav>
 
-      <div class="social-media">
+      <!-- <div class="social-media">
         <div
           class="insta"
           style="
@@ -191,7 +214,7 @@
             "
           />
         </div>
-      </div>
+      </div> -->
 
       <section style="position: relative">
         <!-- <div class="image" style="width: 100%; height: 200px">
@@ -314,14 +337,11 @@
             </div>
             `
           </div>
-          <div class="call">
-            <button class="call-btn">Request Call</button>
-          </div>
         </div>
 
         <div class="right-side" style="width: 50%">
           <div class="prefrences" style="margin-bottom: 20px">
-            <div class="img-container" style="display: flex; gap: 50px" >
+            <div class="img-container" style="display: flex; gap: 50px">
               <div
                 class="img-1"
                 style="
@@ -460,7 +480,12 @@
         </div>
       </section>
 
-      <section class="Properties" style="background-color: white" data-aos="zoom-in" data-aos-duration="1500">
+      <section
+        class="Properties"
+        style="background-color: white"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+      >
         <div
           class="latest-propety"
           style="padding: 20px 40px; margin-bottom: 40px"
@@ -661,7 +686,7 @@
             <p style="font-size: 30px; font-weight: 600">Explore By City :</p>
           </div>
           <div class="cards">
-            <div class="mumbai">
+            <div class="mumbai" id="mumbai">
               <img
                 src="landing-page-img/mumbai.jpg"
                 style="
@@ -685,7 +710,7 @@
                 Mumbai
               </p>
             </div>
-            <div class="mumbai">
+            <div class="mumbai" id="banglore">
               <img
                 src="landing-page-img/bangalore-img.jpg"
                 style="
@@ -709,7 +734,7 @@
                 Banglore
               </p>
             </div>
-            <div class="mumbai">
+            <div class="mumbai" id="delhi">
               <img
                 src="landing-page-img/delhi-img.jpg"
                 style="
@@ -733,7 +758,7 @@
                 New Delhi
               </p>
             </div>
-            <div class="mumbai">
+            <div class="mumbai" id="noida">
               <img
                 src="top-living/wtc-noida.jpg"
                 style="
@@ -783,7 +808,12 @@
         </div>
       </section>
 
-      <section class="top-living" data-aos="fade-up"  data-aos-duration="2000">
+      <section
+        class="top-living"
+        id="top-living"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div class="top-living-container">
           <div class="top-heading">
             <p>Top Living in India</p>
@@ -867,7 +897,11 @@
         </div>
       </section>
 
-      <section class="advantage-section" data-aos="fade-up" data-aos-duration="1000">
+      <section
+        class="advantage-section"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div class="advantage-container">
           <div class="advantage-heading">
             <p class="p-1">Housify Advantages</p>

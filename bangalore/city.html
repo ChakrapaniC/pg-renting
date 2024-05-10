@@ -26,12 +26,12 @@
         </div>
       </nav>
 
-      <section class="cards" data-aos="zoom-in" data-aos-duration="1000">
+      <section class="cards" data-aos="fade-in" data-aos-duration="1000">
         <div class="heading">
           <p>Coliving Spaces in Banglore</p>
         </div>
         <div class="coliving-spaces">
-          <div class="card">
+          <div class="card" onclick="showDetails(1)">
             <img src="banglore-coliving/img1.webp" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Modena House</h4>
@@ -40,7 +40,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(2)">
             <img src="banglore-coliving/img2.jpg" alt="img-1" />
             <div class="details">
               <h4>Hyphen Club Sprout</h4>
@@ -49,7 +49,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(3)">
             <img src="banglore-coliving/img-4.jpg" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Shanghai House</h4>
@@ -58,7 +58,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(4)">
             <img src="banglore-coliving/img-6.webp" alt="img-1" />
             <div class="details">
               <h4>Hyphen Club Vieux</h4>
@@ -67,7 +67,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(5)">
             <img src="banglore-coliving/img-7.jpg" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Casper House</h4>
@@ -76,7 +76,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(6)">
             <img src="banglore-coliving/img-8.jpg" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Canterbury House</h4>
@@ -85,7 +85,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(7)">
             <img src="banglore-coliving/img-9.webp" alt="img-1" />
             <div class="details">
               <h4>Hyphen Club Lush</h4>
@@ -94,7 +94,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(8)">
             <img src="banglore-coliving/img-10.webp" alt="img-1" />
             <div class="details">
               <h4>COVIE Bannerghatta 185</h4>
@@ -103,7 +103,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(9)">
             <img src="banglore-coliving/img-3.webp" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Modena House</h4>
@@ -136,7 +136,7 @@
       </section>
 
       <section class="more-cards">
-        <div class="card">
+        <div class="card" onclick="showDetails(10)">
             <img src="banglore-coliving/img-11.jpg" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Modena House</h4>
@@ -145,7 +145,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(11)">
             <img src="banglore-coliving/img-12.jpg" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Modena House</h4>
@@ -154,7 +154,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(12)">
             <img src="banglore-coliving/img-13.jpg" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Modena House</h4>
@@ -163,7 +163,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(13)">
             <img src="banglore-coliving/img-14.jpg" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Modena House</h4>
@@ -172,7 +172,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(14)">
             <img src="banglore-coliving/img-15.jpg" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Modena House</h4>
@@ -181,7 +181,7 @@
               <p>Call Owner</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" onclick="showDetails(15)">
             <img src="banglore-coliving/img-16.jpg" alt="img-1" />
             <div class="details">
               <h4>Stanza Living Modena House</h4>
@@ -192,6 +192,79 @@
           </div>
       </section>
      
+      <section class="top-amenities">
+        <div class="container">
+          <div class="row" data-aos="fade-in" data-aos-duration="1000">
+            <div class="left">
+              <img  src="banglore-coliving/amenities-img.png"/>
+            </div>
+            <div class="right">
+              <div class="inner-right">
+                <p class="p-1">Live with Housify</p>
+                <p class="p-2">With us, you will get a chance to unlock incredible amenities with a vibrant community of like-minded people.</p>
+                <div class="icons">
+                  <div class="icon">
+                    <div class="img-container">
+                      <img src="banglore-coliving/food.png" class="image"/>
+                    </div>
+                    <div class="details">
+                      <h4>Tasty Food</h4>
+                      <p>Our spaces offer homelike food with hygienic and delicious food servings</p>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="img-container">
+                      <img src="banglore-coliving/car.png" class="image"/>
+                    </div>
+                    <div class="details">
+                      <h4>Parking</h4>
+                      <p>Our living spaces offer designated parking spots</p>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="img-container">
+                      <img src="banglore-coliving/cleaning.png" class="image"/>
+                    </div>
+                    <div class="details">
+                      <h4>Daily Cleaning</h4>
+                      <p>You will get daily house cleaning services without any additional cost</p>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="img-container">
+                      <img src="banglore-coliving/wifi.png" class="image"/>
+                    </div>
+                    <div class="details">
+                      <h4>High Speed WiFi</h4>
+                      <p>Our all spaces have a blazing speed internet connection</p>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <div class="img-container">
+                      <img src="banglore-coliving/washing-machine.png" class="image"/>
+                    </div>
+                    <div class="details">
+                      <h4>Laundry</h4>
+                      <p>Free access to the laundry and drying facility</p>
+                    </div>
+                  </div>
+                  
+                  <div class="icon">
+                    <div class="img-container">
+                      <img src="banglore-coliving/washing-machine.png" class="image"/>
+                    </div>
+                    <div class="details">
+                      <h4>Fully Furnished</h4>
+                      <p>Our all living spaces are equipped with modern furniture</p>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="modal-contents">
         <div id="myModal" class="modal">
@@ -231,6 +304,7 @@
         <p>Copyrigth&copy;2024 All right Reserved</p>
       </footer>
     <script src="city.js"></script>
+    <script src="singlePg.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

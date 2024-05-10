@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="singlePg.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner-container" data-aos="fade-out" data-aos-duration="1000">
+            <nav class="navbar">
+                <p1 style="font-size: 35px; letter-spacing: 5px; font-weight: bold">Housify</p1>
+
+                <div class="info">
+                    <p1>About Us</p1>
+                    <p1>Contact Us</p1>
+                </div>
+                <div class="btn">
+                    <button class="btn3">Book Now</button>
+                </div>
+            </nav>
+            <div class="content">
+                <section class="img-section">
+                    <img src="" class="image" />
+                </section>
+                <section class="full-details">
+                    <div class="details">
+                        <div class="inner-1"></div>
+                        <h4 class="h-4"></h4>
+                    </div>
+                </section>
+                <hr />
+                <section class="amenities">
+                    <h5>Amenities</h5>
+                    <div class="all-amenities">
+                        <div>
+                            <p>
+                                <img src="banglore-coliving/amenity/wifi.png" />
+                                <span>Wifi</span>
+                            </p>
+                            <p>
+                                <img src="banglore-coliving/amenity/tv.png" />
+                                <span>Tv</span>
+                            </p>
+                            <p>
+                                <img src="banglore-coliving/amenity/parking.png" />
+                                <span>Parking</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <img src="banglore-coliving/amenity/cupbord.png" />
+                                <span>Cupbord</span>
+                            </p>
+                            <p>
+                                <img src="banglore-coliving/amenity/deposite.png" />
+                                <span>Deposite</span>
+                            </p>
+                            <p>
+                                <img src="banglore-coliving/amenity/icons8-do-not-touch-100.png" />
+                                <span>No Restriction</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <img src="banglore-coliving/amenity/kitchen.png" />
+                                <span>Kitchen</span>
+                            </p>
+                            <p>
+                                <img src="banglore-coliving/amenity/housekeeping.png" />
+                                <span>Housekeeping</span>
+                            </p>
+                            <p>
+                                <img src="banglore-coliving/amenity/icons8-lease-100.png" />
+                                <span>Security</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <img src="banglore-coliving/amenity/icons8-hot-springs-100 (1).png" />
+                                <span>Geyser</span>
+                            </p>
+                            <p>
+                                <img src="banglore-coliving/amenity/icons8-bathroom-100.png" />
+                                <span>Bathroom</span>
+                            </p>
+                            <p>
+                                <img src="banglore-coliving/amenity/power.png" />
+                                <span>Power Backup</span>
+                            </p>
+                        </div>
+                    </div>
+                     </section>
+                <hr />
+                <section class="pricing" style="margin: 40px 0px;">
+                    <h4 style="padding-bottom: 20px;">Pricing</h4>
+                    <div class="plans">
+                        <div class="imga">
+                            <img src="images/single sharing.jpeg" />
+                        </div>
+                        <div class="sharing">
+                            <h5>Private Room</h5>
+                            <p style="padding-top: 10px;">Entire room for yourself with access to amenities</p>
+                        </div>
+                        <div class="price">
+                            <h5>&#8377;30,000/ month</h5>
+                        </div>
+                    </div>
+                    <div class="plans">
+                        <div class="imga">
+                            <img src="images/double-sharing.jpeg" />
+                        </div>
+                        <div class="sharing">
+                            <h5>Double Sharing</h5>
+                            <p style="padding-top: 10px;">Entire room for yourself with access to amenities</p>
+                        </div>
+                        <div class="price">
+                            <h5 class="dynamic"></h5>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="modal-contents">
+                    <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <div>
+                                <p>Request Call Back</p>
+                            </div>
+                            <form class="modal-form">
+                                <input type="text" name="name" placeholder="Name"><br>
+                                <input type="email" name="email" placeholder="Email"><br>
+                                <input type="tel" name="phone" placeholder="Phone"><br>
+                                <select name="Type of Space">
+                                    <option value="option1">Select Type</option>
+                                    <option value="option2">Single Room</option>
+                                    <option value="option3">Twin Sharing</option>
+                                </select>
+                                <select name="Budget">
+                                    <option value="option1">Budget</option>
+                                    <option value="option2">Above 30k</option>
+                                    <option value="option3">20k to 30k</option>
+                                    <option value="option4">10k to 20k</option>
+                                </select><br>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="agree">
+                                    <label for="agree">I agree to the terms and conditions</label>
+                                </div>
+                                <button type="submit" class="btn-send">Book</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </section>
+         
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="singlePg.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

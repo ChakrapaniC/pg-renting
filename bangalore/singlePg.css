@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(242, 237, 237);
+    border: none;
+    height: 70px;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(rgb(222, 215, 215));
+  }
+  .content{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .btn3{
+    margin-left: 40px;
+    padding: 10px 20px;
+    font-size: large;
+    border: none;
+    border: 2px solid rgb(74, 74, 230);
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(71, 71, 236);
+  }
+  .btn3:hover{
+    background-color: rgb(71, 71, 225);
+    color: white;
+    transition: all 0.5s;
+  }
+  .img-section{
+    height: 500px;
+    margin: 40px auto;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .image:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+  .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+  }
+  .inner-1 p{
+    padding-top: 10px;
+    font-size: 20px;
+  }
+   h4{
+    font-size: 25px;
+  }
+  .all-amenities{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 120px; */
+    align-items: center;
+    justify-content: space-between;
+  }
+  .all-amenities div p{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    font-weight: 500;
+  }
+  .all-amenities div p img{
+    width: 40%;
+    height: 40%;
+
+  }
+ h5{
+  font-size: 25px;
+  padding-top: 20px;
+ }
+ .plans{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 25px 0;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 6px #0000000d;
+  background-image: linear-gradient(to right top, #f0f5f5, #edf3f1, #ebf1ed, #ebefe8, #ecece4);
+
+ }
+ .plans{
+  margin-bottom: 20px;
+ }
+ .imga{
+  flex: 0 0 12%;
+    padding: 0 15px;
+ }
+ .imga img{
+  max-width: 90%;
+ }
+ .sharing{
+  width: 58%;
+  padding: 10px 15px;
+ }
+ .price{
+  text-align: right;
+  flex: 0 0 30%;
+  padding: 0 15px;
+ }
+ .sharing h5{
+  padding: 0;
+ }
+ .price h5{
+  font-size: 20px;
+ }
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 30px;
+  border: none;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.modal-content > div{
+  margin-bottom: 15px ;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* Styles for the form */
+.modal-form input[type=text], 
+.modal-form input[type=email], 
+.modal-form input[type=tel], 
+.modal-form select {
+  width: calc(100% - 5px);
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.modal-form select {
+  margin-right: 5px;
+}
+
+.modal-form .checkbox {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0px;
+}
+
+.modal-form .checkbox label {
+  font-size: 14px;
+  display: block;
+}
+
+.modal-form .btn-send {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.modal-form .btn-send:hover {
+  background-color: #45a049;
+}

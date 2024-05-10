@@ -9,7 +9,7 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-.navbar-new::before {
+#navbar1::before {
   content: "";
   background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlOF9waG90b2dyYXBoeV9vZl9zY2FuZGluYXZpYW5fc3R5bGVfY296eV9tb2Rlcm5fYl9kYmM1NDA2Yy0zZTA0LTQzNzMtYWVhYi1iNjhkOTVkZjc5MTJfMS5qcGc.jpg");
   position: absolute;
@@ -24,13 +24,85 @@ body {
   z-index: -1;
   opacity: 0.8;
 }
-.navbar-new{
+#navbar1{
     padding: 20px 0;
     height: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     position: relative;
+}
+.navbar-new p1{
+  font-size: 20px;
+}
+.navbar-new{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search-box{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-search{
+  width: 40%;
+  padding: relative;
+}
+.inner-search input{
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+}
+.search-icon{
+   display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 30.5%;
+    top: 8px;
+}
+.search-icon img{
+  height: 60%;
+  width: 60%;
+  color: white;
+}
+::-webkit-input-placeholder{
+  color: black;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 40%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 73px;
+    border-radius: 19px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.dropdown-menu a{
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+.dropdown-menu a:hover{
+  cursor: pointer;
+  background-color: rgb(199, 241, 227);
 }
 .navbar {
   display: none;
@@ -50,11 +122,22 @@ body {
   gap: 15px;
   font-weight: 500;
 }
+.info a{
+  text-decoration: none;
+  color : black;
+}
 
 .btn {
   display: flex;
-  gap: 5px;
+  justify-content: center;
+  align-items: center;
   height: 40px;
+  border-radius: 1px 5px 5px 5px rgb(221, 219, 219);
+}
+.call-btn:hover{
+  background-color: rgb(76, 76, 221) !important;
+  color: white !important;
+  transition: all 0.3s !important;
 }
 
 .more-info {
@@ -90,7 +173,7 @@ body {
 .amenities {
   display: flex;
   flex-direction: row;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .search-bar input {
@@ -140,9 +223,6 @@ body {
   align-items: center;
   gap: 30px;
 }
-.call-btn:hover{
-  background-color: wheat;
-}
 
 
 .wifi,
@@ -172,8 +252,8 @@ body {
   justify-content: space-around;
 }
 .cards div:hover{
-  background-color: rgb(247, 191, 191);
-  transition: all 0.5s;
+  transform: scale(1.1) !important;
+  transition: all 0.5s ease-in-out !important;
 }
 
 .card-1 {
@@ -203,6 +283,7 @@ body {
   border: none;
   background-color: rgb(222, 218, 218);
 }
+
 .renting {
   width: 100%;
   height: 500px;
@@ -242,13 +323,13 @@ footer {
   display: flex;
   align-items: center;
 }
-.call {
+/* .call {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .call-btn {
-  padding: 15px 25px;
+  padding: 10px 15px;
   border: 1px solid rgb(45, 45, 214);
   border-radius: 15px;
   font-size: 25px;

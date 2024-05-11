@@ -55,9 +55,9 @@
           >
 
           <div class="info">
-            <p1><a href="#top-living">About Us</a></p1>
+            <p1><a href="about/about.html">About Us</a></p1>
             <p1><a href="#">Contact Us</a></p1>
-            <p1><a href="#">Top Living</a></p1>
+            <p1><a href="#top-living">Top Living</a></p1>
           </div>
 
           <div class="btn">
@@ -971,6 +971,42 @@
           </div>
         </div>
       </section>
+
+      <section class="modal-contents">
+        <div id="myModal" class="modal">
+            
+            <div class="modal-content">
+                <div>
+                    <p>Request Call Back</p>
+                </div>
+              <form class="modal-form">
+                <input type="text" name="name" placeholder="Name"><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <input type="tel" name="phone" placeholder="Phone"><br>
+                <select name="Type of Space">
+                  <option value="option1">Type of Space</option>
+                  <option value="option2">Single Room</option>
+                  <option value="option3">Twin Sharing</option>
+                  <option value="option4">Co-Living</option>
+                </select>
+                <select name="Select City">
+                  <option value="option1">Select City</option>
+                  <option value="option2">Banglore</option>
+                  <option value="option3">gurugram</option>
+                  <option value="option4">Noida</option>
+                </select><br>
+                <div class="checkbox">
+                  <input type="checkbox" id="agree">
+                  <label for="agree">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" class="btn-send" onclick="handleSubmit(event)">Send</button>
+              </form>
+            </div>
+          </div>
+          
+      </section>
+      
+      <div id="toast" class="toast"></div>
 
       <footer>
         <p>Copyrigth&copy;2024 All right Reserved</p>

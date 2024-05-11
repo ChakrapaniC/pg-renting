@@ -66,8 +66,38 @@ hyderabad1.addEventListener('click',()=> {
 const toggleMenu = () => {
     dropdown.style.display = "block"
 }
-window.onclick = function(event) {
-    if (event.target == navbar) {
-      dropdown.style.display = "none";
+
+
+  const requestBtn = document.querySelector('.call-btn');
+  const modal1 = document.querySelector('.modal');
+  
+  
+  requestBtn.addEventListener('click',()=> {
+     modal1.style.display = "block"
+     console.log("click")
+  })
+  window.onclick = function(event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+      if (event.target == navbar) {
+        dropdown.style.display = "none";
+      }
     }
-  }
+
+    const showToast = (message, duration = 3000) => {
+        const toast = document.getElementById('toast');
+        toast.innerText = message;
+        toast.style.display = 'block';
+        setTimeout(() => {
+            toast.style.display = 'none';
+        }, duration);
+    }
+    
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      showToast("Broker will contact you soon");
+      const modal1 = document.querySelector('.modal');
+      modal1.style.display = "none";
+      return false
+    }

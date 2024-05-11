@@ -84,7 +84,96 @@
     background-color: rgb(221, 212, 212) ;
     transition: all 0.5s;
 } */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 30px;
+    border: none;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .modal-content > div{
+    margin-bottom: 15px ;
+    font-size: 25px;
+    font-weight: 500;
+  }
 
+  /* Styles for the form */
+  .modal-form input[type=text], 
+  .modal-form input[type=email], 
+  .modal-form input[type=tel], 
+  .modal-form select {
+    width: calc(100% - 5px);
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .modal-form select {
+    margin-right: 5px;
+  }
+
+  .modal-form .checkbox {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0px;
+  }
+
+  .modal-form .checkbox label {
+    font-size: 14px;
+    display: block;
+  }
+
+  .modal-form .btn-send {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .modal-form .btn-send:hover {
+    background-color: #45a049;
+  }
+  .toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 999;
+}
 
 @media screen and (max-width: 576px){
     .Gurugram{

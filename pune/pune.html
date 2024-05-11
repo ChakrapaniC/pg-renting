@@ -15,12 +15,10 @@
         >
 
         <div class="info">
-          <p1>About Us</p1>
-          <p1>Contact Us</p1>
+          <p1><a href="../about/about.html">About Us</a></p1>
+          <p1><a>Contact Us</a></p1>
         </div>
         <div class="btn">
-          <button class="btn1">Login</button>
-          <button class="btn2">Register</button>
           <button class="btn3">Request Call</button>
         </div>
       </nav>
@@ -307,12 +305,15 @@
                 <input type="checkbox" id="agree" />
                 <label for="agree">I agree to the terms and conditions</label>
               </div>
-              <button type="submit" class="btn-send">Send</button>
+              <button type="submit" class="btn-send" onclick="handleSubmit(event)">Send</button>
             </form>
           </div>
         </div>
       </section>
     </div>
+   
+    <div id="toast" class="toast"></div>
+
     <footer>
       <p>Copyrigth&copy;2024 All right Reserved</p>
     </footer>

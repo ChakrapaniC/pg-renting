@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="about.css"/>
     <title>Document</title>
 </head>
 <body>
-    <div class="about-container">
+    <div class="about-container" data-aos="fade-in" data-aos-duration="1000">
         <nav class="navbar">
             <p1 style="font-size: 35px; letter-spacing: 5px; font-weight: bold"
               >Housify</p1
             >
     
             <div class="info">
-              <p1>About Us</p1>
               <p1>Contact Us</p1>
             </div>
             <div class="btn">
@@ -33,21 +33,42 @@
             </div>
         </section>
 
-        <section class="section-2">
+        <section class="section-2" data-aos="fade-out" data-aos-duration="1000">
             <div class="left-div">
                 <div class="info">
                     <h2>The Housify Network</h2>
                     <hr>
                     <p>The CoFynd network includes more than 100,000+ verified work and living spaces in 25+ cities across India located in top neighborhood and available on complete flexible terms. Cofynd is India’s fastest growing discovery platform to find and book your perfect Space. And we have just started !</p>
                 </div>
-                <div class="more-info"></div>
+                <div class="more-info">
+                    <div class="inner-div">
+                       <div class="div-1">
+                        <div>
+                            <p class="p-1">25+</p>
+                            <p class="p-2">Cities</p>
+                        </div>
+                       </div>
+                       <div class="div-2">
+                        <div>
+                            <p class="p-1">1000+</p>
+                            <p class="p-2">Locations</p>
+                        </div>
+                       </div>
+                       <div class="div-3">
+                        <div>
+                            <p class="p-1">100,000+</p>
+                            <p class="p-2">Spaces</p>
+                        </div>
+                       </div>
+                    </div>
+                </div>
             </div>
             <div class="right-div">
                 <img src="images/Cities-on-map.svg"/>
             </div>
         </section>
 
-        <section class="section-3">
+        <section class="section-3" data-aos="fade-out" data-aos-duration="1000">
             <div class="left-div">
                 <img src="images/img-1.jpg" alt="img-1"/>
             </div> 
@@ -59,6 +80,28 @@
                 </div>
             </div>
         </section>
+
+        <section class="section-4" data-aos="fade-out" data-aos-duration="1000">
+            <div class="left-side">
+                <div>
+                    <h4>Flexible Office Space, Without The Distractions Of Coworking.</h4>
+                    <hr/>
+                    <p>While we tap on more and more cities everyday, our constant aim remains to offer the highest quality of flexibility and privacy at each point. Our spaces speak loud of present-day amenities that are well suited for maximizing work efficiency and potential of the individuals.</p>
+                </div>
+            </div>
+            <div class="right-side">
+                <img src="images/img-2.jpg" alt="img-2"/>
+            </div>
+        </section>
+
+        <footer>
+            <p>Copyrigth&copy;2024 All right Reserved</p>
+        </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

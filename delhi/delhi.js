@@ -145,3 +145,20 @@ window.onclick = function(event) {
         window.location.href = `singlePg.html${queryParams}`;
     }
   }
+
+  const showToast = (message, duration = 3000) => {
+    const toast = document.getElementById('toast');
+    toast.innerText = message;
+    toast.style.display = 'block';
+    setTimeout(() => {
+        toast.style.display = 'none';
+    }, duration);
+}
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  showToast("Broker will contact you soon");
+  const modal1 = document.querySelector('.modal');
+  modal1.style.display = "none";
+  return falso
+}

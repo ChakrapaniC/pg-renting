@@ -22,10 +22,10 @@
     transition: all 1s;
     
 }
-.Gurugram:hover::before{
+.Gurugram:hover::before,.Pune:hover::before,.Bangalore:hover::before,.Ahmedabad:hover::before,.Delhi:hover::before,.Hyderabad:hover::before,.Noida:hover::before,.Mumbai1:hover::before{
     position: absolute;
     content: "";
-    background: radial-gradient(44.97% 44.97% at 50% 55.03%, rgba(57, 68, 79, 0) 0%, rgba(57, 68, 79, .2) 0);
+    background: radial-gradient(44.97% 44.97% at 50% 55.03%, rgba(57, 68, 79, 0) 0%, rgba(57, 68, 79, .4) 0);
     top: 0;
     width: 100%;
     height: 100%;
@@ -174,15 +174,70 @@
     display: none;
     z-index: 999;
 }
+.mobile-nav{
+  display:none;
+  padding-bottom: 5px;
+  background-color: antiquewhite;
+}
+.top{
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between ;
+  margin-top: 10px;
+}
+.bottom{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 576px){
-    .Gurugram{
+  .Gurugram,.Bangalore
+  ,.Noida,.Delhi,.Pune,.Ahmedabad,
+  .Mumbai1,.Hyderabad{
         width: 40%;
     }
     .card-text p{
-        text-align: center;
+        display: none;
     }
     .social-media{
       display: none;
+    }
+    .tag-line p1{
+      text-align: center;
+    }
+    .mobile-nav{
+      display: block;
+     }
+     .navbar{
+      display: none;
+     }
+     .top p1{
+      font-size: 25px !important;
+      padding-left: 20px;
+     }
+     .top .info p1{
+      font-size: 15px !important;
+      padding: 0 2px !important;
+      font: 500;
+    }
+    .info{
+      padding-right: 15px;
+    }
+    
+    .top .info p1 a{
+      text-decoration: none;
+      color: black;
+    }
+    .btn3{
+      padding: 10px 15px !important;
+      font-size: large;
+      border: none;
+      border: 2px solid rgb(74, 74, 230);
+      border-radius: 10px;
+      background-color: white;
+      color: rgb(71, 71, 236);
     }
 }

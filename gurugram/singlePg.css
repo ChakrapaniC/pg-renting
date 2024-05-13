@@ -203,3 +203,16 @@
 .modal-form .btn-send:hover {
   background-color: #45a049;
 }
+@media screen and (max-width: 576px){
+  .plans{
+    flex-direction: column;
+  }
+  .imga{
+    flex: none;
+    width: 60%;
+  }
+  .sharing{
+    width: 100%;
+    text-align: center;
+  }
+}

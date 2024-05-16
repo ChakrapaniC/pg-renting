@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="style.css" />
@@ -53,7 +54,7 @@
           <p1 style="font-size: 35px; letter-spacing: 5px; font-weight: bold"
             >Housify</p1
           >
-         
+
           <div class="info">
             <p1><a href="../about/about.html">About Us</a></p1>
             <p1>Contact Us</p1>
@@ -74,7 +75,7 @@
 
           <div class="info">
             <p1><a href="about/about.html">About Us</a></p1>
-            <p1><a href="#">Contact Us</a></p1>
+            <p1><a href="#contact-row">Contact Us</a></p1>
             <p1><a href="#top-living">Top Living</a></p1>
           </div>
 
@@ -147,9 +148,14 @@
         </div> -->
         <div class="search-box">
           <div class="inner-search">
-            <input type="text" placeholder="Search Your Location" readonly onclick="toggleMenu()"/>
+            <input
+              type="text"
+              placeholder="Search Your Location"
+              readonly
+              onclick="toggleMenu()"
+            />
             <div class="search-icon">
-              <img src="icons8-magnifying-glass-30.png"/>
+              <img src="icons8-magnifying-glass-30.png" />
             </div>
             <div class="dropdown-menu">
               <a href="bangalore/city.html">Bangalore</a>
@@ -233,7 +239,6 @@
           />
         </div>
       </div> -->
-
 
       <section class="amenities" style="background-color: rgb(229, 229, 177)">
         <div class="left-side">
@@ -494,23 +499,8 @@
                 Hurry Up, Rooms Are Filling Up Quickly
               </p>
             </div>
-            <div
-              style="
-                background-color: rgb(228, 220, 220);
-                font-size: large;
-                font-weight: 600;
-                padding: 10px;
-                border-radius: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              "
-            >
-              Sort By<span
-                ><img
-                  src="landing-page-img/down-arrow.png"
-                  style="width: 30px; height: 30px"
-              /></span>
+            <div class="see-more">
+              <a href="recent/recent.html">See More</a>
             </div>
           </div>
           <div class="card-container">
@@ -892,7 +882,7 @@
       <section
         class="advantage-section"
         data-aos="fade-up"
-        data-aos-duration="1000"
+        data-aos-duration="500"
       >
         <div class="advantage-container">
           <div class="advantage-heading">
@@ -966,39 +956,92 @@
 
       <section class="modal-contents">
         <div id="myModal" class="modal">
-            
-            <div class="modal-content">
-                <div>
-                    <p>Request Call Back</p>
+          <div class="modal-content">
+            <div>
+              <p>Request Call Back</p>
+            </div>
+            <form class="modal-form">
+              <input type="text" name="name" placeholder="Name" /><br />
+              <input type="email" name="email" placeholder="Email" /><br />
+              <input type="tel" name="phone" placeholder="Phone" /><br />
+              <select name="Type of Space">
+                <option value="option1">Type of Space</option>
+                <option value="option2">Single Room</option>
+                <option value="option3">Twin Sharing</option>
+                <option value="option4">Co-Living</option>
+              </select>
+              <select name="Select City">
+                <option value="option1">Select City</option>
+                <option value="option2">Banglore</option>
+                <option value="option3">gurugram</option>
+                <option value="option4">Noida</option></select
+              ><br />
+              <div class="checkbox">
+                <input type="checkbox" id="agree" />
+                <label for="agree">I agree to the terms and conditions</label>
+              </div>
+              <button
+                type="submit"
+                class="btn-send"
+                onclick="handleSubmit(event)"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div id="toast" class="toast"></div>
+
+      <section class="upper-footer">
+        <div class="footer-content">
+          <div class="rows">
+            <div class="content-row">
+              <div>
+                <div class="Housify" style="margin-bottom: 10px;"><h4>HOUSIFY</h4></div>
+                <div  class="text">
+                  <p> Housify is a top leading platform to provide couple-friendly space in pan India. Our team physically verified all the listed spaces, these are perfect and offer you a premium, prestigious, and trouble-free lifestyle. Housify is an ideal platform that provides independence, liberty, as well as freedom to couples. You just need to follow three easy steps to onboard on your desired couple-friendly living accommodation with Housify.</p>
                 </div>
-              <form class="modal-form">
-                <input type="text" name="name" placeholder="Name"><br>
-                <input type="email" name="email" placeholder="Email"><br>
-                <input type="tel" name="phone" placeholder="Phone"><br>
-                <select name="Type of Space">
-                  <option value="option1">Type of Space</option>
-                  <option value="option2">Single Room</option>
-                  <option value="option3">Twin Sharing</option>
-                  <option value="option4">Co-Living</option>
-                </select>
-                <select name="Select City">
-                  <option value="option1">Select City</option>
-                  <option value="option2">Banglore</option>
-                  <option value="option3">gurugram</option>
-                  <option value="option4">Noida</option>
-                </select><br>
-                <div class="checkbox">
-                  <input type="checkbox" id="agree">
-                  <label for="agree">I agree to the terms and conditions</label>
+              </div>
+            </div>
+            <div class="pg-row">
+              <div>
+                <div class="pg"><h4>PG</h4></div>
+                <hr/>
+                <div class="ull">
+                  <li><a href="bangalore/city.html">PG in Bangalore</a></li>
+                  <li><a href="delhi/delhi.html">PG in Delhi</a></li>
+                  <li><a href="gurugram/gurugram.html">PG in Gurugram</a></li>
+                  <li><a href="noida/noida.html">PG in Noida</a></li>
+                  <li><a href="pune/pune.html">PG in Pune</a></li>
+                  <li><a href="hyderabad/hyderabad.html">PG in Hyderabad</a></li>
+                  <li><a href="mumbai/mumbai.html">PG in Mumbai</a></li>
+                  <li><a href="ahmedabad/ahmedabad.html">PG in Ahmedabad</a></li>
+
                 </div>
-                <button type="submit" class="btn-send" onclick="handleSubmit(event)">Send</button>
-              </form>
+              </div>
+            </div>
+            <div class="contact-row" id="contact-row">
+              <div>
+                <div class="one">
+                  <div style="margin-bottom: 10px;"><h4>Contact us</h4></div>
+                  <hr style="margin-bottom: 10px; width: 30%; height: 3px; background-color: blue;"/>
+                  <a style="text-decoration: none;">get.Housify@gmail.com</a>
+                </div>
+                <div class="two"> <p style="text-align: justify;">Don’t miss to subscribe to our new feeds, kindlyy fill the form below.</p></div>
+                 
+                <div class="three" style="margin-top: 20px;">
+                  <div style="margin-bottom: 20px;"><h3>follow us</h3></div>
+                  <a><i class="fab fa-facebook-f facebook-bg i-1"></i></a>
+                  <a><i class="fab fa-twitter twitter-bg i-2"></i></a>
+                  <a><i class="fab fa-google-plus-g google-bg i-3"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-          
+        </div>
       </section>
-      
-      <div id="toast" class="toast"></div>
 
       <footer>
         <p>Copyrigth&copy;2024 All right Reserved</p>

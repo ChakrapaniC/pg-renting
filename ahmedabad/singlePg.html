@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="singlePg.css" />
     <title>Document</title>
@@ -45,7 +46,18 @@
             <div class="content">
                 <section class="img-section">
                     <img src="" class="image" />
+                    <!-- <iframe class="map" src="" width="40%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe style="border-radius: 20px;" width="100%" height="500px" src="https://www.youtube.com/embed/6O1lMtcwORM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </section>
+                <div style="width:100%; margin-bottom: 40px; border-radius: 20px;">
+                    <h4 style="margin-bottom: 20px;">Virtual Tour</h4>
+                    <!-- <iframe style="border-radius: 20px;" width="100%" height="415" src="https://www.youtube.com/embed/6O1lMtcwORM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    <iframe style="border-radius: 20px;"  class="map" src="" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <h4>Nearby Amenities</h4>
+                <div id="results">
+                    
+                </div>
                 <section class="full-details">
                     <div class="details">
                         <div class="inner-1"></div>
@@ -195,14 +207,14 @@
                     <div class="pg"><h4>PG</h4></div>
                     <hr/>
                     <div class="ull">
-                      <li><a href="bangalore/city.html">PG in Bangalore</a></li>
-                      <li><a href="delhi/delhi.html">PG in Delhi</a></li>
-                      <li><a href="gurugram/gurugram.html">PG in Gurugram</a></li>
-                      <li><a href="noida/noida.html">PG in Noida</a></li>
-                      <li><a href="pune/pune.html">PG in Pune</a></li>
-                      <li><a href="hyderabad/hyderabad.html">PG in Hyderabad</a></li>
-                      <li><a href="mumbai/mumbai.html">PG in Mumbai</a></li>
-                      <li><a href="ahmedabad/ahmedabad.html">PG in Ahmedabad</a></li>
+                      <li><a href="../bangalore/city.html">PG in Bangalore</a></li>
+                      <li><a href="../delhi/delhi.html">PG in Delhi</a></li>
+                      <li><a href="../gurugram/gurugram.html">PG in Gurugram</a></li>
+                      <li><a href="../noida/noida.html">PG in Noida</a></li>
+                      <li><a href="../pune/pune.html">PG in Pune</a></li>
+                      <li><a href="../hyderabad/hyderabad.html">PG in Hyderabad</a></li>
+                      <li><a href="../mumbai/mumbai.html">PG in Mumbai</a></li>
+                      <li><a href="../ahmedabad/ahmedabad.html">PG in Ahmedabad</a></li>
     
                     </div>
                   </div>
@@ -232,6 +244,7 @@
     </div>
     <script src="singlePg.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
         AOS.init();
     </script>

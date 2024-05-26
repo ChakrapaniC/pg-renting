@@ -244,15 +244,15 @@
 .content-row{
   width: 33.33%;
 }
-.info p1 a{
-  text-decoration: none;
-}
-
 .pg-row{
   display: flex;
   width: 33.33%;
   justify-content: center;
 }
+.info p1 a{
+  text-decoration: none;
+}
+
 .contact-row{
   width: 33.33%;
 }
@@ -426,6 +426,10 @@
     border-radius: 10px;
     background-color: white;
     color: rgb(71, 71, 236);
+  }
+  .modal{
+    display: block;
+    top: 50px;
   }
   .rows{
     flex-direction: column;

@@ -8,6 +8,7 @@ function getQueryParameters() {
     return queryParams;
 }
 const queryParams = getQueryParameters();
+console.log(queryParams)
 
 const img = document.querySelector('.image');
 const map = document.querySelector('.map');
@@ -18,7 +19,7 @@ const h1 = document.querySelector('.h-4');
 const price1 = document.querySelector('.dynamic');
 if(queryParams){
    img.src = queryParams.image;
-   map.src = queryParams.mapSrc;
+   map.src = queryParams.mapSrc
    const detailHtml = `
        <h4>${queryParams.name}</h4>
        <p>${queryParams.location}</p>
@@ -42,20 +43,7 @@ window.onclick = function(event) {
     }
   }
 
-  async function findAmenities(location) {
-    // const location = document.getElementById('location').value;
-    // const location = "Wagholi, Pune";
-    const coordinates = await findCoordinates(location);
-    if (coordinates) {
-        const amenities = ['cafe', 'bus_stop', 'marketplace', 'station', 'park'];
-        document.getElementById('results').innerHTML = '';
-        for (const amenity of amenities) {
-            await findAmenity(coordinates, amenity);
-        }
-    }
-}
-
-async function findCoordinates(location) {
+  async function findCoordinates(location) {
     const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(location)}&format=json&limit=1`;
     try {
         const response = await fetch(url);
@@ -69,6 +57,19 @@ async function findCoordinates(location) {
     } catch (error) {
         console.error('Error fetching coordinates:', error);
         return null;
+    }
+}
+
+  async function findAmenities(location) {
+    // const location = document.getElementById('location').value;
+    // const location = "Wagholi, Pune";
+    const coordinates = await findCoordinates(location);
+    if (coordinates) {
+        const amenities = ['cafe', 'bus_stop', 'marketplace', 'station', 'park'];
+        document.getElementById('results').innerHTML = '';
+        for (const amenity of amenities) {
+            await findAmenity(coordinates, amenity);
+        }
     }
 }
 

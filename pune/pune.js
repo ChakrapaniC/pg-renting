@@ -173,5 +173,13 @@ const handleSubmit = (event) => {
   showToast("Broker will contact you soon");
   const modal1 = document.querySelector('.modal');
   modal1.style.display = "none";
-  return falso
+  return false
 }
+const dropdown = document.querySelector('.dropdown-menu');
+const closeBtn = document.querySelector('.close');
+const toggleMenu = () => {
+  dropdown.style.display = 'block';
+};
+closeBtn.addEventListener('click', ()=> {
+  dropdown.style.display = 'none';
+})

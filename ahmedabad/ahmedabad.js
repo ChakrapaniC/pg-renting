@@ -130,3 +130,13 @@ const handleSubmit = (event) => {
   modal1.style.display = "none";
   return falso
 }
+
+const dropdown = document.querySelector('.dropdown-menu');
+const closeBtn = document.querySelector('.close');
+const toggleMenu = () => {
+  dropdown.style.display = 'block';
+};
+closeBtn.addEventListener('click', ()=> {
+  dropdown.style.display = 'none';
+})
+

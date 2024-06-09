@@ -612,48 +612,41 @@
                 </p>
               </div>
               <div class="query-field">
-                <form>
+                <form action="dataretrive.php" method="post" >
                   <div class="input">
-                    <div>
-                      <input placeholder="name" type="text" required />
-                    </div>
-                    <div>
-                      <input placeholder="email" type="email" required />
-                    </div>
-                    <div>
-                      <input
-                        placeholder="Phone number"
-                        type="tel"
-                        maxlength="10"
-                        required
-                      />
-                    </div>
-                    <!----->
-
-                    <div>
-                      <select>
-                        <option style="display: none">Type of Space</option>
-                        <option>Single Room</option>
-                        <option>Triple Share</option>
-                        <option>twin Share</option>
-                      </select>
-                    </div>
-                    <div>
-                      <select>
-                        <option style="display: none">Select City</option>
-                        <option>Noida</option>
-                        <option>Mumbai</option>
-                        <option>Banglore</option>
-                        <option>Gurugram</option>
-                        <option>Delhi</option>
-                        <option>Pune</option>
-                      </select>
-                    </div>
-                    <div>
-                      <button class="sub-btn">Submit</button>
-                    </div>
+                      <div>
+                          <input name="name" placeholder="name" type="text" required />
+                      </div>
+                      <div>
+                          <input name="email" placeholder="email" type="email" required />
+                      </div>
+                      <div>
+                          <input name="phone" placeholder="Phone number" type="tel" maxlength="10" required />
+                      </div>
+                      <div>
+                          <select name="spaceType">
+                              <option value="" style="display: none">Type of Space</option>
+                              <option>Single Room</option>
+                              <option>Triple Share</option>
+                              <option>Twin Share</option>
+                          </select>
+                      </div>
+                      <div>
+                          <select name="city" id="citySelect">
+                              <option value="" style="display: none">Select City</option>
+                              <option value="noida">noida</option>
+                              <option value="mumbai">mumbai</option>
+                              <option value="bangalore">bangalore</option>
+                              <option value="gurugram">gurugram</option>
+                              <option value="delhi">delhi</option>
+                              <option value="pune">pune</option>
+                          </select>
+                      </div>
+                      <div>
+                          <button class="sub-btn" type="submit"  >Submit</button>
+                      </div>
                   </div>
-                </form>
+              </form>
               </div>
             </div>
 

@@ -101,3 +101,26 @@ const toggleMenu = () => {
       modal1.style.display = "none";
       return false
     }
+
+    // document.getElementById('cityForm').addEventListener('submit', function(event) {
+    //     event.preventDefault(); // Prevent the default form submission
+    
+    //     const citySelect = document.getElementById('citySelect');
+    //     const selectedCity = citySelect.value;
+    
+    //     // Send the selected city to dataretrive.php using fetch
+    //     fetch('dataretrive.php', {
+    //         method: 'GET',
+    //         headers: {
+    //             'Content-Type': 'application/application/json'
+    //         },
+    //         body: 'city=' + encodeURIComponent(selectedCity)
+    //     })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         console.log(data); // Use the fetched data here
+    //     })
+    //     .catch(error => {
+    //         console.error('Error:', error);
+    //     });
+    // });
